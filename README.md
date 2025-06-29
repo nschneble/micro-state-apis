@@ -1,6 +1,11 @@
 # Tiny Irreverent APIs
 
-What are they and why should you care about them?
+What are they and why are they clearly awesome?
+
+Tiny Irreverent APIs (TIAPIs) have three founding principles:
+1. They only have a single endpoint
+1. They have fixed datasets
+1. They're APIs
 
 ## They only have a single endpoint
 
@@ -18,7 +23,7 @@ I hope this part's obvious.
 
 ## Examples
 
-A tiny irreverent api (TIAPI) of US state capitals:
+U.S. state capitals:
 
 ```
 https://fancyenchiladas.net/capitals?state=ma
@@ -43,11 +48,11 @@ https://fancyenchiladas.net/pangram
 
 ---
 
-## Why should you care?
+## THIS IS SO AWESOME
 
-Because they're silly and fun. Here's what I imagine a TIAPI looks like:
+I know right? Here's what I imagine a TIAPI looks like:
 
-![Tiny fish](/images/fishy.jpg)
+![Tiny fishy](/images/fishy.jpg)
 
 
 This code is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
