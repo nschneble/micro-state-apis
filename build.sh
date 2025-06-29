@@ -6,7 +6,8 @@ cp robots.txt public/robots.txt
 cp sitemap.xml public/sitemap.xml
 
 # create the html folder structure
-mkdir public/capitals public/pangram
+mkdir public/best-picture public/capitals public/pangram
+cp html/best-picture.html public/best-picture/index.html
 cp html/capitals.html public/capitals/index.html
 cp html/index.html public/index.html
 cp html/pangram.html public/pangram/index.html
