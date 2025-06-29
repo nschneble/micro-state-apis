@@ -3,9 +3,9 @@
 What are they and why are they clearly awesome?
 
 Tiny Irreverent APIs (TIAPIs) have three founding principles:
-1. They only have a single endpoint
-1. They have fixed datasets
-1. They're APIs
+1. [They only have a single endpoint](#they-only-have-a-single-endpoint)
+1. [They have fixed datasets](#they-have-fixed-datasets)
+1. [They're APIs](#theyre-apis)
 
 ## They only have a single endpoint
 
