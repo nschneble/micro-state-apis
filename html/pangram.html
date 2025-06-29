@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tiny Irreverent APIs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Silly single endpoint APIs with fixed data sets">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+	</head>
+	<body>
+		<h1>Pangram API</h1>
+		<p>Obtain a random pangram</p>
+		<hr />
+		<p><strong>Endpoint:</strong> <a href="/pangram/">https://fancyenchiladas.net/pangram</a></p>
+		<p><strong>Parameters:</strong> none</p>
+		<p class="code" id="pangram">&nbsp;</p>
+		<noscript>
+			<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
+		</noscript>
+		<hr />
+		<p><small>← <a href="/">Back Home</a></small></p>
+		<script type="module">
+			fetch("/data/pangrams.json")
+				.then(response => response.json())
+				.then(data => {
+					pangram = document.getElementById("pangram");
+					pangram.innerHTML = data[Math.floor(Math.random() * data.length)];
+				});
+		</script>
+	</body>
+</html>

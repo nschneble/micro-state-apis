@@ -31,3 +31,11 @@ a:link:hover,
 a:visited:hover {
 	text-decoration: underline;
 }
+
+// API responses
+.code {
+	background: $lite-page-color;
+	color: $dark-page-color;
+	padding: 10px;
+	margin-bottom: 20px;
+}
