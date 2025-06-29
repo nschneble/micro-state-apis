@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tiny Irreverent APIs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Silly single endpoint APIs with fixed data sets">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+	</head>
+	<body>
+		<h1>U.S. Capitals API</h1>
+		<p>Get a U.S. state capital</p>
+		<hr />
+		<p><strong>Endpoint:</strong> <a href="/capitals/">https://fancyenchiladas.net/capitals</a></p>
+		<p><strong>Parameters:</strong> state; a two-letter abbreviation, e.g. "ma"</p>
+		<p><strong>Returns:</strong> the name of a capital city</p>
+		<p class="code" id="capital">&nbsp;</p>
+		<noscript>
+			<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
+		</noscript>
+		<hr />
+		<p><small>← <a href="/">Back Home</a></small></p>
+		<script type="module">
+			fetch("/data/capitals.json")
+				.then(response => response.json())
+				.then(data => {
+					const queryString = window.location.search.substring(1);
+					const searchParams = new URLSearchParams(queryString);
+					var state = searchParams.get("state");
+					if (state in data) {
+						// nothing else to do here
+					} else {
+						var keys = Object.keys(data);
+						state = keys[Math.floor(Math.random() * keys.length)];
+					}
+					var capital = document.getElementById("capital");
+					capital.innerHTML = `${data[state]}, ${state.toUpperCase()}`;
+				});
+		</script>
+	</body>
+</html>
