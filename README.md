@@ -18,21 +18,21 @@ I hope this part's obvious.
 
 ## Examples
 
-A tiny irreverent api or (TIAPI) of US state capitals:
+A tiny irreverent api (TIAPI) of US state capitals:
 
 ```
 https://fancyenchiladas.net/capitals?state=ma
 # Boston
 ```
 
-Academy Award Best Picture winners:
+Best Picture Oscar winners:
 
 ```
 https://fancyenchiladas.net/best-picture?2008
 # Slumdog Millionaire
 ```
 
-You could even create a TIAPI that acts like a generator or randomizer where any value in the dataset can be returned.
+You could even create a TIAPI that acts like a generator or randomizer!
 
 Pangrams:
 
@@ -45,6 +45,9 @@ https://fancyenchiladas.net/pangram
 
 ## Why should you care?
 
-Because they're silly and fun.
+Because they're silly and fun. Here's what I imagine a TIAPI looks like:
+
+![Tiny fish](/images/fishy.jpg)
+
 
 This code is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
