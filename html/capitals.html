@@ -25,6 +25,7 @@
 		<hr>
 		<p><small>← <a href="/">Back Home</a></small></p>
 		<script type="module">
+			/*global document fetch URLSearchParams window */
 			fetch("/data/capitals.json")
 				.then(response => response.json())
 				.then(data => {

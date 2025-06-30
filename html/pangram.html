@@ -25,10 +25,11 @@
 		<hr>
 		<p><small>← <a href="/">Back Home</a></small></p>
 		<script type="module">
+			/*global document fetch */
 			fetch("/data/pangrams.json")
 				.then(response => response.json())
 				.then(data => {
-					pangram = document.getElementById("pangram");
+					var pangram = document.getElementById("pangram");
 					pangram.innerHTML = data[Math.floor(Math.random() * data.length)];
 				});
 		</script>

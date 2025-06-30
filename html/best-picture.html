@@ -25,13 +25,13 @@
 		<hr>
 		<p><small>← <a href="/">Back Home</a></small></p>
 		<script type="module">
+			/*global document fetch URLSearchParams window */
 			fetch("/data/best-pictures.json")
 				.then(response => response.json())
 				.then(data => {
 					const queryString = window.location.search.substring(1);
 					const searchParams = new URLSearchParams(queryString);
 					var year = searchParams.toString().replace("=", "");
-					console.log(year);
 					if (year in data) {
 						// nothing else to do here
 					} else {
