@@ -32,6 +32,12 @@ a:visited:hover {
 	text-decoration: underline;
 }
 
+// responsive images
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 // API responses
 .code {
 	background: $lite-page-color;
