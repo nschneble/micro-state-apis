@@ -26,14 +26,14 @@ I hope this part's obvious.
 U.S. state capitals:
 
 ```
-https://fancyenchiladas.net/capitals?state=ma
+https://api.fancyenchiladas.net/capitals?state=ma
 # Boston
 ```
 
 Best Picture Oscar winners:
 
 ```
-https://fancyenchiladas.net/best-picture?2008
+https://api.fancyenchiladas.net/best-picture?2008
 # Slumdog Millionaire
 ```
 
@@ -42,7 +42,7 @@ You could even create a TIAPI that acts like a generator or randomizer!
 Pangrams:
 
 ```
-https://fancyenchiladas.net/pangram
+https://api.fancyenchiladas.net/pangram
 # The quick brown fox jumps over the lazy dog
 ```
 
