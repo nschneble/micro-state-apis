@@ -12,18 +12,26 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 	</head>
 	<body>
-		<h1>Pangram API</h1>
-		<p>Get a random pangram</p>
+		<header>
+			<h1>Pangram API</h1>
+			<p>Get a random pangram</p>
+		</header>
 		<hr>
-		<p><strong>Endpoint:</strong> <a href="/pangram/">/pangram</a></p>
-		<p><strong>Parameters:</strong> none</p>
-		<p><strong>Returns:</strong> a sentence that contains all the letters of the alphabet</p>
-		<p class="code" id="pangram">&nbsp;</p>
-		<noscript>
-			<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
-		</noscript>
+		<main>
+			<p><strong>Endpoint:</strong> <a href="/pangram/">/pangram</a></p>
+			<p><strong>Parameters:</strong> none</p>
+			<p><strong>Returns:</strong> a sentence that contains all the letters of the alphabet</p>
+			<p class="code" id="pangram">&nbsp;</p>
+			<noscript>
+				<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
+			</noscript>
+		</main>
 		<hr>
-		<p><small>← <a href="/">Back Home</a></small></p>
+		<footer>
+			<nav>
+				<p><small>← <a href="/">Back Home</a></small></p>
+			</nav>
+		</footer>
 		<script type="module">
 			/*global document fetch */
 			fetch("/data/pangrams.json")

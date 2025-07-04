@@ -12,18 +12,26 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 	</head>
 	<body>
-		<h1>Best Picture API</h1>
-		<p>Get a best picture Oscar winner</p>
+		<header>
+			<h1>Best Picture API</h1>
+			<p>Get a best picture Oscar winner</p>
+		</header>
 		<hr>
-		<p><strong>Endpoint:</strong> <a href="/best-picture/">/best-picture</a></p>
-		<p><strong>Parameters:</strong> a four-digit year (no value)</p>
-		<p><strong>Returns:</strong> the name of an award-winning film</p>
-		<p class="code" id="bestPicture">&nbsp;</p>
-		<noscript>
-			<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
-		</noscript>
+		<main>
+			<p><strong>Endpoint:</strong> <a href="/best-picture/">/best-picture</a></p>
+			<p><strong>Parameters:</strong> a four-digit year (no value)</p>
+			<p><strong>Returns:</strong> the name of an award-winning film</p>
+			<p class="code" id="bestPicture">&nbsp;</p>
+			<noscript>
+				<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
+			</noscript>
+		</main>
 		<hr>
-		<p><small>← <a href="/">Back Home</a></small></p>
+		<footer>
+			<nav>
+				<p><small>← <a href="/">Back Home</a></small></p>
+			</nav>
+		</footer>
 		<script type="module">
 			/*global document fetch URLSearchParams window */
 			fetch("/data/best-pictures.json")

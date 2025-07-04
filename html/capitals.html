@@ -12,18 +12,26 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 	</head>
 	<body>
-		<h1>U.S. Capitals API</h1>
-		<p>Get a U.S. state capital</p>
+		<header>
+			<h1>U.S. Capitals API</h1>
+			<p>Get a U.S. state capital</p>
+		</header>
 		<hr>
-		<p><strong>Endpoint:</strong> <a href="/capitals/">/capitals</a></p>
-		<p><strong>Parameters:</strong> state; two-letter abbreviation</p>
-		<p><strong>Returns:</strong> the name of a capital city</p>
-		<p class="code" id="capital">&nbsp;</p>
-		<noscript>
-			<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
-		</noscript>
+		<main>
+			<p><strong>Endpoint:</strong> <a href="/capitals/">/capitals</a></p>
+			<p><strong>Parameters:</strong> state; two-letter abbreviation</p>
+			<p><strong>Returns:</strong> the name of a capital city</p>
+			<p class="code" id="capital">&nbsp;</p>
+			<noscript>
+				<p>Sorry friend, but you need JavaScript enabled to use this API.</p>
+			</noscript>
+		</main>
 		<hr>
-		<p><small>← <a href="/">Back Home</a></small></p>
+		<footer>
+			<nav>
+				<p><small>← <a href="/">Back Home</a></small></p>
+			</nav>
+		</footer>
 		<script type="module">
 			/*global document fetch URLSearchParams window */
 			fetch("/data/capitals.json")
